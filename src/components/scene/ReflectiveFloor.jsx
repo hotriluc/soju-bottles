@@ -7,13 +7,13 @@ const ReflectiveFloor = () => {
       <MeshReflectorMaterial
         blur={[300, 100]}
         resolution={2048}
-        mixBlur={1}
+        mixBlur={0.8}
         mixStrength={50}
-        depthScale={1.2}
+        depthScale={1}
         minDepthThreshold={0.4}
-        maxDepthThreshold={1}
+        maxDepthThreshold={1.2}
         color="#050505"
-        metalness={0.6}
+        metalness={0.9}
         roughness={1}
       />
     </mesh>

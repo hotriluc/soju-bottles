@@ -52,12 +52,12 @@ void main() {
     
 
     vec2 q = vec2(0.);
-    q.x = fbm( st + 0.00*uTime);
+    q.x = fbm( st + 0.00 * uTime);
     q.y = fbm( st + vec2(1.0));
 
     vec2 r = vec2(0.);
-    r.x = fbm( st + 1.0*q + vec2(1.7,9.2)+ 0.15*uTime );
-    r.y = fbm( st + 1.0*q + vec2(8.3,2.8)+ 0.126*uTime);
+    r.x = fbm( st + 1.0 * q + vec2(1.7,9.2)+ 0.15 * uTime );
+    r.y = fbm( st + 1.0 * q + vec2(8.3,2.8)+ 0.126 * uTime);
 
     float f = fbm(st+r);
 
@@ -88,6 +88,6 @@ void main() {
 
 
 
-    gl_FragColor =  vec4((f*f*f+.6*f*f+.5*f) *color * result, .1)  ;
+    gl_FragColor =  vec4((f*f*f+.6*f*f+.5*f) * color * result, .05)  ;
 
 }

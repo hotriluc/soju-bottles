@@ -22,7 +22,7 @@ const LiquidMaterial = shaderMaterial(
 );
 extend({ LiquidMaterial });
 
-export function Model(props) {
+export function Bottle(props) {
   const liquidRef = useRef();
   const { nodes, materials } = useGLTF("/soju.glb");
 
@@ -46,7 +46,7 @@ export function Model(props) {
     metalness: { value: 1, min: 0, max: 1 },
   });
 
-  useFrame((state, delta) => {
+  useFrame((state) => {
     const et = state.clock.getElapsedTime();
     liquidRef.current.uTime = et;
   });
@@ -89,7 +89,7 @@ export function Model(props) {
         position={[0, 2.9, 0]}
         scale={0.97}
       >
-        <meshStandardMaterial {...capConfig} />
+        <meshStandardMaterial {...capConfig} color={props.capColor} />
       </mesh>
     </group>
   );
