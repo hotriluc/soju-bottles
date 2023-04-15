@@ -88,6 +88,6 @@ void main() {
 
 
 
-    gl_FragColor =  vec4((f*f*f+.6*f*f+.5*f) * color * result, .05)  ;
+    gl_FragColor =  vec4((f*f*f+.6*f*f+.5*f) * color * result, .4)  ;
 
 }

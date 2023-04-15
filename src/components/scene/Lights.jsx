@@ -12,6 +12,7 @@ const Lights = () => {
 
   return (
     <>
+      <ambientLight />
       <spotLight
         ref={spotLightRef}
         penumbra={1}
