@@ -19,7 +19,7 @@ const Lights = () => {
         angle={0.35}
         castShadow
         position={[4 * 3, 8 * 3, 0]}
-        intensity={10}
+        intensity={15}
         shadow-bias={-0.001}
         shadow-mapSize={[256, 256]}
       />
