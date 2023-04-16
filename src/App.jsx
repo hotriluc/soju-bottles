@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       <Canvas dpr={[1, 1.5]} camera={{ position: [-3.5, 1, 2.8] }}>
-        <Perf position="top-left" />
+        {/* <Perf position="top-left" /> */}
         <OrbitControls
           minDistance={3}
           maxDistance={10}
